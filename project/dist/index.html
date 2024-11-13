@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metamorphoses - Ovid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-4XXwL9zS.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-7yk4mQK8.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <h1>Metamorphoses</h1>
+        <button class="toggle-btn" onclick="toggleSidebar('leftSidebar')">☰</button>
+      </div>
+    </header>
+    
+    <div class="toolbar top">
+      <div class="toolbar-content">Top Toolbar</div>
+    </div>
+
+    <div class="container">
+      <aside class="sidebar left" id="leftSidebar">
+        <nav>
+          <ul id="toc">
+            <li>
+              <div class="book-title" onclick="toggleBook(1)">
+                <span>Book I: The Creation</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book1">
+                <a href="#1.1" class="subsection">The Creation of the World</a>
+                <a href="#1.2" class="subsection">The Four Ages of Man</a>
+                <a href="#1.3" class="subsection">Lycaon</a>
+                <a href="#1.4" class="subsection">The Great Flood</a>
+                <a href="#1.5" class="subsection">Apollo and Daphne</a>
+                <a href="#1.6" class="subsection">Io and Jupiter</a>
+              </div>
+            </li>
+            <li>
+              <div class="book-title" onclick="toggleBook(2)">
+                <span>Book II: The Sun God</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book2">
+                <a href="#2.1" class="subsection">Phaethon's Request</a>
+                <a href="#2.2" class="subsection">The Palace of the Sun</a>
+                <a href="#2.3" class="subsection">The Fall of Phaethon</a>
+                <a href="#2.4" class="subsection">Callisto and Jupiter</a>
+                <a href="#2.5" class="subsection">The Raven and the Crow</a>
+                <a href="#2.6" class="subsection">Ocyrhoe's Prophecy</a>
+              </div>
+            </li>
+            <li>
+              <div class="book-title" onclick="toggleBook(3)">
+                <span>Book III: Cadmus</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book3">
+                <a href="#3.1" class="subsection">The Founding of Thebes</a>
+                <a href="#3.2" class="subsection">Actaeon's Transformation</a>
+                <a href="#3.3" class="subsection">Narcissus and Echo</a>
+                <a href="#3.4" class="subsection">Pentheus and Bacchus</a>
+                <a href="#3.5" class="subsection">The Sailors' Transformation</a>
+                <a href="#3.6" class="subsection">The Death of Pentheus</a>
+              </div>
+            </li>
+            <!-- Books 4-12 follow the same pattern -->
+            <li>
+              <div class="book-title" onclick="toggleBook(4)">
+                <span>Book IV: Daughters of Minyas</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book4">
+                <a href="#4.1" class="subsection">Pyramus and Thisbe</a>
+                <a href="#4.2" class="subsection">Mars and Venus</a>
+                <a href="#4.3" class="subsection">The Sun's Revelation</a>
+                <a href="#4.4" class="subsection">Leucothoe and Clytie</a>
+                <a href="#4.5" class="subsection">Salmacis and Hermaphroditus</a>
+                <a href="#4.6" class="subsection">Perseus and Andromeda</a>
+              </div>
+            </li>
+            <li>
+              <div class="book-title" onclick="toggleBook(5)">
+                <span>Book V: The Rape of Proserpina</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book5">
+                <a href="#5.1" class="subsection">Perseus' Wedding</a>
+                <a href="#5.2" class="subsection">The Contest of the Muses</a>
+                <a href="#5.3" class="subsection">The Abduction of Proserpina</a>
+                <a href="#5.4" class="subsection">Ceres' Search</a>
+                <a href="#5.5" class="subsection">Arethusa's Tale</a>
+                <a href="#5.6" class="subsection">Triptolemus</a>
+              </div>
+            </li>
+            <li>
+              <div class="book-title" onclick="toggleBook(6)">
+                <span>Book VI: Arachne</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book6">
+                <a href="#6.1" class="subsection">Arachne's Challenge</a>
+                <a href="#6.2" class="subsection">Niobe's Pride</a>
+                <a href="#6.3" class="subsection">The Lycian Peasants</a>
+                <a href="#6.4" class="subsection">Marsyas</a>
+                <a href="#6.5" class="subsection">Procne and Philomela</a>
+                <a href="#6.6" class="subsection">Boreas and Orithyia</a>
+              </div>
+            </li>
+            <li>
+              <div class="book-title" onclick="toggleBook(7)">
+                <span>Book VII: Medea</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book7">
+                <a href="#7.1" class="subsection">Jason and Medea</a>
+                <a href="#7.2" class="subsection">The Rejuvenation of Aeson</a>
+                <a href="#7.3" class="subsection">The Death of Pelias</a>
+                <a href="#7.4" class="subsection">Medea's Flight</a>
+                <a href="#7.5" class="subsection">Theseus in Athens</a>
+                <a href="#7.6" class="subsection">The Plague at Aegina</a>
+              </div>
+            </li>
+            <li>
+              <div class="book-title" onclick="toggleBook(8)">
+                <span>Book VIII: Daedalus</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book8">
+                <a href="#8.1" class="subsection">Scylla and Minos</a>
+                <a href="#8.2" class="subsection">The Minotaur</a>
+                <a href="#8.3" class="subsection">Daedalus and Icarus</a>
+                <a href="#8.4" class="subsection">The Calydonian Boar</a>
+                <a href="#8.5" class="subsection">Althaea and Meleager</a>
+                <a href="#8.6" class="subsection">Philemon and Baucis</a>
+              </div>
+            </li>
+            <li>
+              <div class="book-title" onclick="toggleBook(9)">
+                <span>Book IX: Hercules</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book9">
+                <a href="#9.1" class="subsection">Achelous and Hercules</a>
+                <a href="#9.2" class="subsection">Nessus and Deianira</a>
+                <a href="#9.3" class="subsection">The Death of Hercules</a>
+                <a href="#9.4" class="subsection">The Birth of Hercules</a>
+                <a href="#9.5" class="subsection">Dryope</a>
+                <a href="#9.6" class="subsection">Iolaus and Callirhoe's Sons</a>
+              </div>
+            </li>
+            <li>
+              <div class="book-title" onclick="toggleBook(10)">
+                <span>Book X: Orpheus</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book10">
+                <a href="#10.1" class="subsection">Orpheus and Eurydice</a>
+                <a href="#10.2" class="subsection">Cyparissus</a>
+                <a href="#10.3" class="subsection">Ganymede</a>
+                <a href="#10.4" class="subsection">Apollo and Hyacinthus</a>
+                <a href="#10.5" class="subsection">Pygmalion</a>
+                <a href="#10.6" class="subsection">Myrrha</a>
+              </div>
+            </li>
+            <li>
+              <div class="book-title" onclick="toggleBook(11)">
+                <span>Book XI: The Death of Orpheus</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book11">
+                <a href="#11.1" class="subsection">The Death of Orpheus</a>
+                <a href="#11.2" class="subsection">Midas</a>
+                <a href="#11.3" class="subsection">The Founding of Troy</a>
+                <a href="#11.4" class="subsection">Peleus and Thetis</a>
+                <a href="#11.5" class="subsection">Daedalion</a>
+                <a href="#11.6" class="subsection">Ceyx and Alcyone</a>
+              </div>
+            </li>
+            <li>
+              <div class="book-title" onclick="toggleBook(12)">
+                <span>Book XII: The Trojan War</span>
+                <span class="toggle-icon">▶</span>
+              </div>
+              <div class="book-content" id="book12">
+                <a href="#12.1" class="subsection">The Greeks at Aulis</a>
+                <a href="#12.2" class="subsection">The House of Rumor</a>
+                <a href="#12.3" class="subsection">Achilles</a>
+                <a href="#12.4" class="subsection">The Battle of the Lapiths</a>
+                <a href="#12.5" class="subsection">Periclymenus</a>
+                <a href="#12.6" class="subsection">The Death of Achilles</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <h2>Metamorphoses</h2>
+        <p>Select a book and section from the table of contents to begin reading Ovid's epic poem of transformations.</p>
+      </main>
+
+      <div class="right-sidebars">
+        <aside class="sidebar right top" id="rightTopSidebar">
+          <button class="toggle-btn" onclick="toggleSidebar('rightTopSidebar')">×</button>
+          <div class="sidebar-content">
+            <h3>Top Right Sidebar</h3>
+            <p>Important information here</p>
+            <p>Scroll to see more content</p>
+            <p>Additional content for scrolling</p>
+            <p>More information</p>
+            <p>Even more content</p>
+            <p>Keep scrolling</p>
+            <p>Almost there</p>
+            <p>Final item</p>
+          </div>
+        </aside>
+
+        <aside class="sidebar right bottom" id="rightBottomSidebar">
+          <button class="toggle-btn" onclick="toggleSidebar('rightBottomSidebar')">×</button>
+          <div class="sidebar-content">
+            <h3>Bottom Right Sidebar</h3>
+            <p>Additional information here</p>
+            <p>More content to scroll</p>
+            <p>Keep going down</p>
+            <p>Important updates</p>
+            <p>Latest news</p>
+            <p>Recent activities</p>
+            <p>Notifications</p>
+            <p>Last item</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="toolbar bottom">
+      <div class="toolbar-content">Bottom Toolbar</div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">Footer Content</div>
+    </footer>
+
+  </body>
+</html>
